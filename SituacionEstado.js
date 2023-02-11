@@ -7,6 +7,8 @@ $(document).ready(function () {
 });
 
 
+
+//FUNCIONES ESTADO DE SITUACION
     function muestra_ActCir(id) {
         if (document.getElementById) { //se obtiene el id
             var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
@@ -100,3 +102,62 @@ function cerraroanc() {
 function cerrarp() {
     document.getElementById("contenidoP").style.display = "none";
 }
+//FIN ESTADO DE SITUACION
+
+
+
+
+
+
+
+
+
+ //FUNCIONES ESTADO DE RESULTADOS
+function muestra_TIB(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_TIB('contenidoTIB');
+}
+
+function cerrarTIB() {
+    document.getElementById("contenidoTIB").style.display = "none";
+}
+
+
+function muestra_TGP(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_TGP('contenidoTGP');
+}
+
+function cerrarTGP() {
+    document.getElementById("contenidoTGP").style.display = "none";
+}
+
+
+
+function muestra_GP(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_GP('contenidoGP');
+}
+
+function cerrarGP() {
+    document.getElementById("contenidoGP").style.display = "none";
+}
+
+
+
+
